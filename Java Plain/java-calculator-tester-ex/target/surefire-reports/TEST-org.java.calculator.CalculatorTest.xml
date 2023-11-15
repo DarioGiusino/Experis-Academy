@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.java.calculator.CalculatorTest" time="0.101" tests="50" errors="0" skipped="10" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\dario\eclipse-workspace\java-calculator-tester-ex\target\test-classes;C:\Users\dario\eclipse-workspace\java-calculator-tester-ex\target\classes;C:\Users\dario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0-M1\junit-jupiter-engine-5.10.0-M1.jar;C:\Users\dario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0-M1\junit-platform-engine-1.10.0-M1.jar;C:\Users\dario\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\dario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0-M1\junit-platform-commons-1.10.0-M1.jar;C:\Users\dario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0-M1\junit-jupiter-api-5.10.0-M1.jar;C:\Users\dario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Rome"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IT"/>
+    <property name="sun.boot.library.path" value="C:\eclipse-jee-2023-03-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\dario\AppData\Local\Temp\surefire17988983371133946227\surefirebooter257244720184631422.jar C:\Users\dario\AppData\Local\Temp\surefire17988983371133946227 2023-05-23T17-59-36_748-jvmRun1 surefire15225612435149150691tmp surefire_03635038551269951844tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\dario\eclipse-workspace\java-calculator-tester-ex\target\test-classes;C:\Users\dario\eclipse-workspace\java-calculator-tester-ex\target\classes;C:\Users\dario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0-M1\junit-jupiter-engine-5.10.0-M1.jar;C:\Users\dario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0-M1\junit-platform-engine-1.10.0-M1.jar;C:\Users\dario\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\dario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0-M1\junit-platform-commons-1.10.0-M1.jar;C:\Users\dario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0-M1\junit-jupiter-api-5.10.0-M1.jar;C:\Users\dario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\dario"/>
+    <property name="user.language" value="it"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\eclipse-jee-2023-03-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\dario\eclipse-workspace\java-calculator-tester-ex"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\dario\AppData\Local\Temp\surefire17988983371133946227\surefirebooter257244720184631422.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.6+10"/>
+    <property name="user.name" value="dario"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.6+10"/>
+    <property name="localRepository" value="C:\Users\dario\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\dario\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="C:\Users\dario\eclipse-workspace\java-calculator-tester-ex"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\eclipse-jee-2023-03-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/eclipse-jee-2023-03-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/eclipse-jee-2023-03-R-win32-x86_64/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\Windows\System32\HWAudioDriverLibs;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\dotnet\;C:\MAMP\bin\php\php8.1.0;C:\ProgramData\ComposerSetup\bin;C:\Users\dario\AppData\Local\Microsoft\WindowsApps;C:\Users\dario\AppData\Local\atom\bin;C:\Users\dario\AppData\Local\Microsoft\WindowsApps;;C:\Users\dario\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dario\AppData\Roaming\npm;C:\Users\dario\AppData\Roaming\Composer\vendor\bin;C:\eclipse-jee-2023-03-R-win32-x86_64\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.6+10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="divideTest[1]" classname="org.java.calculator.CalculatorTest" time="0.021"/>
+  <testcase name="divideTest[2]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="divideTest[3]" classname="org.java.calculator.CalculatorTest" time="0.001"/>
+  <testcase name="divideTest[4]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="divideTest[5]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="divideTest[6]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="divideTest[7]" classname="org.java.calculator.CalculatorTest" time="0.001"/>
+  <testcase name="divideTest[8]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="divideTest[9]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="divideTest[10]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="addTest[1]" classname="org.java.calculator.CalculatorTest" time="0.001"/>
+  <testcase name="addTest[2]" classname="org.java.calculator.CalculatorTest" time="0.001"/>
+  <testcase name="addTest[3]" classname="org.java.calculator.CalculatorTest" time="0.001"/>
+  <testcase name="addTest[4]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="addTest[5]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="addTest[6]" classname="org.java.calculator.CalculatorTest" time="0.001"/>
+  <testcase name="addTest[7]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="addTest[8]" classname="org.java.calculator.CalculatorTest" time="0.001"/>
+  <testcase name="addTest[9]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="addTest[10]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="multiplyTest[1]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="multiplyTest[2]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="multiplyTest[3]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="multiplyTest[4]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="multiplyTest[5]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="multiplyTest[6]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="multiplyTest[7]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="multiplyTest[8]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="multiplyTest[9]" classname="org.java.calculator.CalculatorTest" time="0.002"/>
+  <testcase name="multiplyTest[10]" classname="org.java.calculator.CalculatorTest" time="0.001"/>
+  <testcase name="divideExceptionTest[1]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="divideExceptionTest[2]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="divideExceptionTest[3]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="divideExceptionTest[4]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="divideExceptionTest[5]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="divideExceptionTest[6]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="divideExceptionTest[7]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="divideExceptionTest[8]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="divideExceptionTest[9]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="divideExceptionTest[10]" classname="org.java.calculator.CalculatorTest" time="0">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.java.calculator.CalculatorTest.divideExceptionTest(CalculatorTest.java:54)
+</skipped>
+  </testcase>
+  <testcase name="subtractTest[1]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="subtractTest[2]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="subtractTest[3]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="subtractTest[4]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="subtractTest[5]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="subtractTest[6]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="subtractTest[7]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="subtractTest[8]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="subtractTest[9]" classname="org.java.calculator.CalculatorTest" time="0"/>
+  <testcase name="subtractTest[10]" classname="org.java.calculator.CalculatorTest" time="0.001"/>
+</testsuite>

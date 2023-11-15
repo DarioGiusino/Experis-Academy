@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: org.java.employee.EmployeeTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in org.java.employee.EmployeeTest
+getEmployeeWithInvalidRuleTest  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: Il ruolo deve essere employee o boss
+	at org.java.employee.EmployeeTest.getEmployeeWithInvalidRuleTest(EmployeeTest.java:58)
+
+getEmployeeWithEmptySurnameTest  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: Il cognome deve contenere almeno 3 caratteri
+	at org.java.employee.EmployeeTest.getEmployeeWithEmptySurnameTest(EmployeeTest.java:32)
+
+getEmployeeWithFutureDateTest  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: La data deve essere nel passato
+	at org.java.employee.EmployeeTest.getEmployeeWithFutureDateTest(EmployeeTest.java:45)
+
+getEmployeeWithEmptyNameTest  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: Il nome deve contenere almeno 3 caratteri
+	at org.java.employee.EmployeeTest.getEmployeeWithEmptyNameTest(EmployeeTest.java:19)
+
