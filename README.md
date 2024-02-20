@@ -1,14 +1,13 @@
 # Experis-Academy
 
-Cartella "Java Plain"
+Folder "Java Plain"
 
-La cartella "Java Plain" contiene una serie di progetti Java svolti durante l'esperienza formativa presso Experis Academy. Questi progetti sono esempi che mostrano l'implementazione di concetti e strutture di base in linguaggio Java. Essi includono applicazioni di base, algoritmi, strutture dati, principi di programmazione e casi di studio, sviluppati senza l'ausilio di framework o librerie esterne.
+The "Java Plain" folder contains a series of Java projects completed during the learning experience at Experis Academy. These projects are examples that demonstrate the implementation of basic concepts and structures in the Java language. They include basic applications, algorithms, data structures, programming principles, and case studies, developed without the use of external frameworks or libraries.
 
-Cartella "Spring"
+Folder "Spring"
 
-La cartella "Spring" contiene progetti sviluppati durante il corso presso Experis Academy, focalizzati sull'utilizzo del framework Spring. Questi progetti includono applicazioni web e API RESTful costruite utilizzando Spring Boot, che è uno strumento di sviluppo rapido di applicazioni basate su Spring Framework. Gli esempi implementano concetti avanzati come la gestione delle entità, la connessione a database, operazioni CRUD (Create, Read, Update, Delete) e altri aspetti di sviluppo di applicazioni basate su Spring. L'obiettivo principale di questa sezione è offrire una comprensione pratica e applicata di come utilizzare Spring e le sue funzionalità per costruire e gestire applicazioni Java complesse.
+The "Spring" folder contains projects developed during the course at Experis Academy, focusing on the use of the Spring framework. These projects include web applications and RESTful APIs built using Spring Boot, which is a rapid application development tool based on the Spring Framework. The examples implement advanced concepts such as entity management, database connection, CRUD (Create, Read, Update, Delete) operations, and other aspects of Spring-based application development. The main goal of this section is to provide a practical and applied understanding of how to use Spring and its features to build and manage complex Java applications.
 
-Cartella "MySql"
+Folder "MySql"
 
-La cartella "MySql" è un archivio di conoscenze e implementazioni pratiche nel campo dei database relazionali, concentrato principalmente su MySQL. Al suo interno vi sono file .sql che riflettono il mio percorso attraverso lo studio accademico e l'applicazione pratica di concetti chiave nel mondo dei database.
-Questi file SQL documentano le esperienze nella creazione e manipolazione di database, con particolare attenzione a scenari pertinenti a progetti sviluppati in Spring. Le query qui presenti spaziano dall'implementazione di strutture di base alla gestione avanzata dei dati, offrendo soluzioni ottimizzate per una varietà di contesti di sviluppo.
+The "MySql" folder is a repository of knowledge and practical implementations in the field of relational databases, primarily focused on MySQL. Inside, there are .sql files that reflect my journey through academic study and practical application of key concepts in the world of databases. These SQL files document experiences in creating and manipulating databases, with a particular focus on scenarios relevant to projects developed in Spring. The queries presented here range from implementing basic structures to advanced data management, offering optimized solutions for a variety of development contexts.
