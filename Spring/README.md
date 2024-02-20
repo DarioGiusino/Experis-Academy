@@ -1,89 +1,89 @@
-# spring-il-mio-fotoalbum
+# spring-my-photoalbum
 
-L'applicazione, utilizzata per gestire un album fotografico, è basata su Spring Boot, Vue.js e utilizza un database MySQL per la persistenza dei dati.
+The application, used to manage a photo album, is based on Spring Boot, Vue.js, and uses a MySQL database for data persistence.
 
 Backend:
-AuthConfiguration: Configurazione di Spring Security. Imposta le regole di autorizzazione per le richieste HTTP e gestisce la configurazione per la gestione degli utenti.
+AuthConfiguration: Spring Security configuration. Sets authorization rules for HTTP requests and handles user management configuration.
 
-ContactApiController: Un controller che gestisce le richieste API relative ai contatti. Implementa una funzione per la creazione di nuovi contatti attraverso richieste POST.
+ContactApiController: A controller handling API requests related to contacts. Implements a function for creating new contacts via POST requests.
 
-PhotoApiController: Un controller che gestisce le richieste API relative alle foto. Ha funzioni per recuperare tutte le foto e filtrarle per titolo attraverso richieste GET.
+PhotoApiController: A controller handling API requests related to photos. It has functions to retrieve all photos and filter them by title through GET requests.
 
 Frontend:
-App.vue: Il componente principale Vue.js che rappresenta l'interfaccia utente dell'applicazione. Include una barra di navigazione, un elenco di foto filtrabili, e un modulo di contatto.
+App.vue: The main Vue.js component representing the user interface of the application. Includes a navigation bar, a list of filterable photos, and a contact form.
 
-PhotoComp.vue: Un componente Vue.js che rappresenta singole foto nell'elenco. Visualizza il titolo e la descrizione della foto.
+PhotoComp.vue: A Vue.js component representing individual photos in the list. Displays the title and description of the photo.
 
-Persistenza dei dati:
-Le entità come Category, Contact, Photo, e User sono classi Java annotate con @Entity, indicando che sono entità JPA.
-Ci sono repository (CategoryRepo, ContactRepo, PhotoRepo, RoleRepo, UserRepo) che estendono JpaRepository per fornire operazioni CRUD per le entità.
-Ci sono servizi (CategoryService, ContactService, PhotoService, RoleService, UserService) che contengono la logica di business e interagiscono con i repository.
+Data Persistence:
+Entities like Category, Contact, Photo, and User are Java classes annotated with @Entity, indicating they are JPA entities.
+There are repositories (CategoryRepo, ContactRepo, PhotoRepo, RoleRepo, UserRepo) extending JpaRepository to provide CRUD operations for the entities.
+There are services (CategoryService, ContactService, PhotoService, RoleService, UserService) containing business logic and interacting with repositories.
 
-Controller Web:
-CategoryController: Gestisce le richieste web relative alle categorie, come la visualizzazione, la creazione, l'aggiornamento e l'eliminazione di categorie.
+Web Controllers:
+CategoryController: Handles web requests related to categories, such as viewing, creating, updating, and deleting categories.
 
-MainController: Reindirizza la richiesta principale alla pagina delle foto.
+MainController: Redirects the main request to the photo page.
 
-PhotoController: Gestisce le richieste web relative alle foto, compresa la visualizzazione, la creazione, l'aggiornamento, la ricerca e l'eliminazione di foto.
+PhotoController: Handles web requests related to photos, including viewing, creating, updating, searching, and deleting photos.
 
-Inizializzazione dei dati di esempio:
-SpringIlMioFotoalbumApplication: Applicazione principale di Spring Boot. Implementa CommandLineRunner per popolare il database con dati di esempio all'avvio dell'applicazione.
+Initialization of Sample Data:
+SpringIlMioFotoalbumApplication: Main Spring Boot application. Implements CommandLineRunner to populate the database with sample data at application startup.
 
-# spring-la-mia-pizzeria-crud
+# spring-my-pizzeria-crud
 
-Questa è un'applicazione Spring Boot per la gestione di una pizzeria. Gli utenti possono visualizzare, creare, modificare ed eliminare le informazioni sulle pizze attraverso un'interfaccia web.
+This is a Spring Boot application for managing a pizzeria. Users can view, create, update, and delete pizza information through a web interface.
 
 Controller (PizzaController):
-Gestisce le richieste HTTP per le operazioni CRUD (Create, Read, Update, Delete) relative alle pizze.
-Le annotazioni @GetMapping e @PostMapping vengono utilizzate per mappare i percorsi delle richieste HTTP ai metodi del controller.
-Ad esempio, /pizza/{id} visualizza i dettagli di una pizza specifica.
+Handles HTTP requests for CRUD (Create, Read, Update, Delete) operations related to pizzas.
+@GetMapping and @PostMapping annotations are used to map request paths to controller methods.
+For example, /pizza/{id} displays details of a specific pizza.
 
 Model (Pizza):
-Rappresenta il modello di una pizza con attributi come name, description, picture, e price.
-Viene utilizzata l'annotazione @Entity per indicare che questa classe è una classe di persistenza gestita da JPA.
-La validazione viene effettuata utilizzando annotazioni come @NotBlank, @Size, @NotNull, e @Min.
+Represents the model of a pizza with attributes like name, description, picture, and price.
+@Entity annotation is used to indicate that this class is a JPA-managed persistence class.
+Validation is done using annotations like @NotBlank, @Size, @NotNull, and @Min.
 
 Repository (PizzaRepo):
-Estende JpaRepository di Spring Data JPA, semplificando le operazioni CRUD sul database.
-Contiene metodi personalizzati come findByNameContaining per la ricerca di pizze per nome.
+Extends Spring Data JPA's JpaRepository, simplifying CRUD operations on the database.
+Contains custom methods like findByNameContaining for searching pizzas by name.
 
 Service (PizzaService):
-Fornisce metodi di servizio che chiamano i metodi del repository per eseguire operazioni sul database.
-Questo strato di servizio può contenere logica aziendale aggiuntiva, ma in questo caso, sembra principalmente inoltrare le chiamate al repository.
+Provides service methods that call repository methods to perform operations on the database.
+This service layer can contain additional business logic, but in this case, it seems to mainly forward calls to the repository.
 
 Application (SpringLaMiaPizzeriaCrudApplication):
-Punto di ingresso dell'applicazione Spring Boot.
-Implementa l'interfaccia CommandLineRunner, che consente di eseguire il codice al momento dell'avvio dell'applicazione. In questo caso, alcune pizze di esempio vengono inserite nel database al momento dell'avvio.
+Entry point of the Spring Boot application.
+Implements the CommandLineRunner interface, allowing code to be executed at application startup. In this case, some sample pizzas are inserted into the database at startup.
 
-Risorse HTML (src/main/resources/templates):
-Contiene file HTML Thymeleaf per le pagine web, come la visualizzazione delle pizze, la creazione, l'aggiornamento e la visualizzazione dei dettagli di una pizza.
+HTML Resources (src/main/resources/templates):
+Contains Thymeleaf HTML files for web pages, such as displaying pizzas, creating, updating, and viewing details of a pizza.
 
-Proprietà dell'applicazione (application.properties):
-Configurazione del database MySQL, con URL, nome utente e password.
-spring.jpa.hibernate.ddl-auto=create indica che Hibernate creerà il database all'avvio dell'applicazione. In un ambiente di produzione, questo dovrebbe essere impostato su un valore più sicuro, come update o none.
+Application Properties (application.properties):
+Configuration of the MySQL database, with URL, username, and password.
+spring.jpa.hibernate.ddl-auto=create indicates that Hibernate will create the database at application startup. In a production environment, this should be set to a safer value like update or none.
 
-# spring-la-mia-pizzeria-webapi
+# spring-my-pizzeria-webapi
 
-Un'applicazione web completa sviluppata per semplificare la gestione delle attività di pizzerie. Questa piattaforma offre un'esperienza intuitiva e potente, permettendo agli utenti di eseguire operazioni CRUD (Create, Read, Update, Delete) per le pizze, gli ingredienti e le offerte speciali.
+A comprehensive web application developed to streamline pizzeria management activities. This platform offers an intuitive and powerful experience, allowing users to perform CRUD (Create, Read, Update, Delete) operations for pizzas, ingredients, and special offers.
 
 Frontend (Vue.js)
-Il frontend, costruito con Vue.js, presenta una struttura chiara e ben organizzata. Al centro di tutto c'è App.vue, che funge da nucleo dell'applicazione. Qui, troverai una barra di ricerca intelligente, denominata "PizzaFilter", progettata per semplificare la navigazione tra le numerose pizze disponibili. Accanto a questa, una lista di pizze in continua evoluzione grazie a una chiamata all'API REST fornita dal robusto backend Spring.
-Ciascuna pizza nella lista è dotata di un pulsante "DELETE", consentendo una gestione flessibile direttamente dal frontend. Le richieste di eliminazione vengono elaborate dal backend attraverso un dedicato PizzaApiController.
+The frontend, built with Vue.js, features a clear and well-organized structure. At the heart of it all is App.vue, which serves as the core of the application. Here, you'll find a smart search bar, dubbed "PizzaFilter," designed to simplify navigation among the numerous available pizzas. Alongside this, a continuously evolving list of pizzas thanks to a call to the REST API provided by the robust Spring backend.
+Each pizza in the list comes with a "DELETE" button, enabling flexible management directly from the frontend. Deletion requests are processed by the backend through a dedicated PizzaApiController.
 
 Backend (Spring Boot)
-Il backend, sviluppato utilizzando il framework Spring Boot, gestisce le richieste relative alle pizze attraverso il PizzaApiController, garantendo una gestione fluida e efficiente. Le informazioni sulle pizze sono immagazzinate in un database MySQL, e la persistenza è gestita con attenzione tramite i servizi PizzaService e PizzaRepo.
-Gli ingredienti e le offerte speciali seguono lo stesso approccio, con rispettivi servizi e repository dedicati. Ogni aspetto del backend è progettato per offrire prestazioni ottimali e una scalabilità robusta.
+The backend, developed using the Spring Boot framework, handles requests related to pizzas through the PizzaApiController, ensuring smooth and efficient management. Pizza information is stored in a MySQL database, and persistence is carefully managed via the PizzaService and PizzaRepo.
+Ingredients and special offers follow the same approach, with respective dedicated services and repositories. Every aspect of the backend is designed to offer optimal performance and robust scalability.
 
-Sicurezza
-La sicurezza è una priorità, gestita attraverso Spring Security. Regole di accesso basate su ruoli (USER, ADMIN) assicurano che ogni utente abbia il livello di autorizzazione appropriato. Il sistema di autenticazione basato su form login e la crittografia delle password con BCrypt contribuiscono a una sicurezza solida e affidabile.
+Security
+Security is a priority, managed through Spring Security. Role-based access rules (USER, ADMIN) ensure each user has the appropriate level of authorization. The form login-based authentication system and password encryption with BCrypt contribute to solid and reliable security.
 
 Database
-Il database MySQL è il custode delle informazioni vitali per la pizzeria. Da ingredienti a offerte speciali, da ruoli a utenti, ogni entità è mappata in modo trasparente alle rispettive tabelle nel database, garantendo coerenza e affidabilità.
+The MySQL database is the custodian of vital information for the pizzeria. From ingredients to special offers, from roles to users, each entity is transparently mapped to their respective tables in the database, ensuring consistency and reliability.
 
-Pagine Web Dinamiche
-L'aspetto visivo è gestito da controller Spring dedicati come PizzaController, IngredientController, e SpecialOfferController. Le pagine sono rese dinamiche grazie all'uso intelligente di template Thymeleaf, offrendo una user experience ricca e coinvolgente.
+Dynamic Web Pages
+The visual aspect is handled by dedicated Spring controllers like PizzaController, IngredientController, and SpecialOfferController. Pages are made dynamic thanks to the intelligent use of Thymeleaf templates, offering a rich and engaging user experience.
 
-Inizializzazione del Database e Altre Configurazioni
-All'avvio dell'applicazione, il database viene arricchito con dati di esempio attraverso SpringLaMiaPizzeriaCrudApplication. Una serie di ingredienti, pizze, offerte speciali, ruoli e utenti di esempio vengono inseriti, permettendoti di esplorare immediatamente tutte le funzionalità.
+Initialization of the Database and Other Configurations
+Upon application startup, the database is enriched with sample data through SpringLaMiaPizzeriaCrudApplication. A series of sample ingredients, pizzas, special offers, roles, and users are inserted, allowing you to immediately explore all features.
 
-Ulteriori configurazioni, inclusa la sicurezza e il database, sono gestite rispettivamente in AuthConfiguration e application.properties. Il frontend è modulare, con componenti chiave come PizzaComp e PizzaFilter che rendono l'applicazione estremamente flessibile e personalizzabile.
+Additional configurations, including security and the database, are handled respectively in AuthConfiguration and application.properties. The frontend is modular, with key components like PizzaComp and PizzaFilter making the application extremely flexible and customizable.
