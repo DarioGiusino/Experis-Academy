@@ -1,210 +1,210 @@
 # java-animals
 
-Questo progetto Java rappresenta un'applicazione di gestione di animali, con un focus particolare sulle interazioni tra diverse categorie di animali. L'applicazione è sviluppata seguendo un'architettura orientata agli oggetti e utilizza interfacce per modellare il comportamento comune tra gli animali.
+This Java project represents an animal management application, with a particular focus on interactions between different categories of animals. The application is developed following an object-oriented architecture and uses interfaces to model common behavior among animals.
 
-Struttura del Progetto
-org.java.inter: Contiene le interfacce FlyingAnimal e SwimmingAnimal che definiscono il comportamento di volo e nuoto degli animali, rispettivamente.
+Project Structure
+org.java.inter: Contains the interfaces FlyingAnimal and SwimmingAnimal, defining the flying and swimming behavior of animals, respectively.
+org.java.obj.abs: Contains the abstract class Animal, providing basic implementations for animals' sound, eating, and sleeping behaviors.
+org.java.obj: Contains concrete classes extending the Animal class and implementing the FlyingAnimal and SwimmingAnimal interfaces. Here you'll find specific implementations for the dog, dolphin, eagle, and robin.
+org.java.main: Includes the AnimalManager class, which manages interactions between animals, allowing them to perform specific actions like flying or swimming.
 
-org.java.obj.abs: Contiene la classe astratta Animal, che fornisce implementazioni di base per il verso, il mangiare e il dormire degli animali.
+In the Main.java file, an array of animals is instantiated, including a dog, dolphin, eagle, and robin. Subsequently, the AnimalManager is used to coordinate the flying and swimming actions of specific animals.
 
-org.java.obj: Contiene le classi concrete che estendono la classe Animal e implementano le interfacce FlyingAnimal e SwimmingAnimal. Qui troviamo le implementazioni specifiche per il cane, il delfino, l'aquila e il pettirosso.
-
-org.java.main: Include la classe AnimalManager, che gestisce le interazioni tra gli animali, consentendo loro di eseguire azioni specifiche come volare o nuotare.
-
-Nel file Main.java, viene istanziato un array di animali, tra cui cane, delfino, aquila e pettirosso. Successivamente, l'AnimalManager viene utilizzato per coordinare le azioni di volo e nuoto di specifici animali.
-
-L'applicazione dimostra l'utilizzo delle interfacce e delle classi astratte per modellare in modo efficace il comportamento degli animali, rendendo il codice flessibile ed estendibile.
+The application demonstrates the use of interfaces and abstract classes to effectively model animal behavior, making the code flexible and extensible.
 
 # java-biglietto-treno
 
-Questo repository contiene una serie di semplici progetti Java creati durante il percorso di apprendimento della programmazione in Java.
+This repository contains a series of simple Java projects created during the Java programming learning path.
 
 CalcolaBiglietto
-Questo progetto consiste in un'applicazione per il calcolo del prezzo del biglietto del treno in base alla distanza da percorrere e all'età del passeggero. L'utente fornisce i chilometri da percorrere e la propria età, e l'applicazione calcola il prezzo del biglietto, applicando sconti per i passeggeri di età inferiore a 18 anni e superiore a 65 anni.
+This project is an application for calculating train ticket prices based on the distance to travel and the passenger's age. The user provides the kilometers to travel and their age, and the application calculates the ticket price, applying discounts for passengers under 18 and over 65 years old.
 
 CheckGuest
-CheckGuest è un'applicazione che verifica se un utente è presente o meno nella lista degli invitati. L'utente inserisce il proprio nome, e l'applicazione controlla se è presente nella lista degli invitati per un evento speciale. La verifica viene eseguita attraverso un ciclo while e un array di nomi.
+CheckGuest is an application that checks whether a user is present or not on the guest list. The user enters their name, and the application checks if it is present on the guest list for a special event. The check is performed using a while loop and an array of names.
 
 CibiPreferiti
-Questo progetto illustra il concetto di array in Java. L'applicazione definisce un array di cibi preferiti e stampa alcune informazioni, come la lunghezza dell'array, il primo e l'ultimo elemento, e l'elemento centrale.
+This project illustrates the concept of arrays in Java. The application defines an array of favorite foods and prints some information, such as the array's length, the first and last elements, and the middle element.
 
 FizzBuzz
-FizzBuzz è un classico esercizio di programmazione. In questa versione, l'utente inserisce un numero, e l'applicazione stampa "Fizz" se il numero è divisibile per 3, "Buzz" se è divisibile per 5, e "FizzBuzz" se è divisibile sia per 3 che per 5. Altrimenti, stampa il numero stesso. L'obiettivo è praticare l'uso delle strutture di controllo in Java.
+FizzBuzz is a classic programming exercise. In this version, the user enters a number, and the application prints "Fizz" if the number is divisible by 3, "Buzz" if it is divisible by 5, and "FizzBuzz" if it is divisible by both 3 and 5. Otherwise, it prints the number itself. The goal is to practice the use of control structures in Java.
 
 # java-calculator-tester-ex
 
-Questo repository contiene due classi utilitarie in Java che possono essere integrate nei progetti per fornire funzionalità specifiche.
+This repository contains two utility classes in Java that can be integrated into projects to provide specific functionalities.
 
 Calculator
-La classe Calculator offre un insieme di operazioni matematiche di base. Attualmente, supporta le seguenti operazioni:
-add(float num1, float num2): Restituisce la somma di due numeri.
-subtract(float num1, float num2): Restituisce la differenza tra due numeri.
-multiply(float num1, float num2): Restituisce il prodotto di due numeri.
-divide(float num1, float num2): Restituisce il risultato della divisione tra due numeri. Si occupa dell'eccezione di divisione per zero.
+The Calculator class offers a set of basic mathematical operations. Currently, it supports the following operations:
+add(float num1, float num2): Returns the sum of two numbers.
+subtract(float num1, float num2): Returns the difference between two numbers.
+multiply(float num1, float num2): Returns the product of two numbers.
+divide(float num1, float num2): Returns the result of dividing two numbers. It handles the division by zero exception.
 
 Employee
-La classe Employee rappresenta un dipendente e include campi per il nome, il cognome, la data di nascita e il ruolo. Fornisce anche metodi di set per ciascun campo, con controlli di validità per garantire dati corretti:
-setFirstname(String firstname): Imposta il nome del dipendente, con una verifica sulla lunghezza minima del nome.
-setLastname(String lastname): Imposta il cognome del dipendente, con una verifica sulla lunghezza minima del cognome.
-setDateOfBirth(LocalDate dateOfBirth): Imposta la data di nascita del dipendente, con una verifica sulla validità della data.
-setRole(String role): Imposta il ruolo del dipendente, con una verifica che consenta solo "employee" o "boss" come valori validi.
+The Employee class represents an employee and includes fields for the first name, last name, date of birth, and role. It also provides setter methods for each field, with validity checks to ensure correct data:
+setFirstname(String firstname): Sets the employee's first name, with a check on the minimum length of the name.
+setLastname(String lastname): Sets the employee's last name, with a check on the minimum length of the last name.
+setDateOfBirth(LocalDate dateOfBirth): Sets the employee's date of birth, with a check on the validity of the date.
+setRole(String role): Sets the employee's role, with a check allowing only "employee" or "boss" as valid values.
 
-Entrambe le classi sono progettate per essere utilizzate come utility in progetti più ampi. Le eccezioni sono gestite in modo da garantire un utilizzo sicuro e coerente delle funzionalità offerte da queste classi.
+Both classes are designed to be used as utilities in larger projects. Exceptions are handled to ensure safe and consistent use of the functionalities offered by these classes.
 
 # java-exceptions-books
 
-Questa applicazione Java rappresenta un semplice Sistema di Gestione di una Biblioteca che consente agli utenti di creare e memorizzare informazioni sui libri. L'applicazione utilizza la gestione delle eccezioni per garantire la validità dei dati inseriti.
+This Java application represents a simple Library Management System that allows users to create and store information about books. The application uses exception handling to ensure the validity of the entered data.
 
-Classe Book
-La classe Book rappresenta un'entità libro con attributi come titolo, numero di pagine, autore ed editore. La classe include metodi setter con gestione delle eccezioni per garantire che durante la creazione dell'oggetto vengano forniti dati validi.
+Book Class
+The Book class represents a book entity with attributes such as title, number of pages, author, and publisher. The class includes setter methods with exception handling to ensure that valid data is provided during object creation.
 
-Classe Library
-La classe Library è la classe principale che interagisce con l'utente per creare una collezione di libri. Richiede all'utente il numero di libri da creare e raccoglie in modo iterativo le informazioni per ciascun libro, creando oggetti Book. La gestione delle eccezioni assicura che vengano accettati solo dati validi e l'utente viene invitato a riprovare in caso di errori.
+Library Class
+The Library class is the main class that interacts with the user to create a collection of books. It prompts the user for the number of books to create and iteratively gathers information for each book, creating Book objects. Exception handling ensures that only valid data is accepted, and the user is prompted to retry in case of errors.
 
-Gli oggetti Book creati vengono quindi scritti su un file di testo e il contenuto del file viene visualizzato all'utente, simulando un record di biblioteca di base.
+The created Book objects are then written to a text file, and the file's contents are displayed to the user, simulating a basic library record.
 
 # java-gestore-eventi
 
-Questa applicazione Java rappresenta un sistema di gestione eventi con funzionalità di prenotazione dei posti. L'applicazione è progettata per consentire agli utenti di creare e gestire eventi, prenotare e cancellare posti, e visualizzare informazioni dettagliate sugli eventi.
+This Java application represents an event management system with seat reservation functionality. The application is designed to allow users to create and manage events, book and cancel seats, and view detailed information about events.
 
-Pacchetto org.java.main
-Main.java: La classe principale dell'applicazione che guida l'utente attraverso la creazione di un nuovo evento. Offre opzioni per prenotare e cancellare posti e visualizzare un riepilogo degli eventi.
+Package org.java.main
+Main.java: The main class of the application that guides the user through the creation of a new event. It provides options to book and cancel seats and display a summary of events.
 
-Pacchetto org.java.obj
-Event.java: Rappresenta un evento generico con attributi come titolo, data, numero totale di posti e posti prenotati. Fornisce metodi per aggiungere e rimuovere posti.
-Concert.java: Estende la classe Event e aggiunge attributi specifici per i concerti, come l'orario e il prezzo del biglietto. Fornisce metodi per formattare l'orario e il prezzo.
-EventPlan.java: Rappresenta un piano di eventi, contenente una lista di eventi. Offre metodi per aggiungere eventi, visualizzare la lista di eventi in ordine cronologico e altro.
+Package org.java.obj
+Event.java: Represents a generic event with attributes such as title, date, total number of seats, and booked seats. Provides methods to add and remove seats.
+Concert.java: Extends the Event class and adds specific attributes for concerts, such as time and ticket price. Provides methods to format time and price.
+EventPlan.java: Represents an event plan, containing a list of events. Provides methods to add events, display the list of events in chronological order, and more.
 
-Funzionalità Principali
-Creazione di un nuovo evento con titolo, data e numero totale di posti disponibili.
-Prenotazione di posti per un evento specifico.
-Cancellazione di posti prenotati per un evento.
-Visualizzazione di un riepilogo dei posti prenotati e disponibili per un evento.
-Creazione di eventi specifici come concerti con attributi aggiuntivi come orario e prezzo del biglietto.
-Gestione di un piano di eventi contenente una lista di eventi con ordinamento cronologico.
-Visualizzazione dettagliata degli eventi nel piano, inclusi concerti con orario e prezzo.
+Main Features
+Creation of a new event with title, date, and total number of available seats.
+Booking seats for a specific event.
+Cancellation of booked seats for an event.
+Display of a summary of booked and available seats for an event.
+Creation of specific events such as concerts with additional attributes like time and ticket price.
+Management of an event plan containing a list of events with chronological sorting.
+Detailed display of events in the plan, including concerts with time and price.
 
 # java-inheritance-shop
 
-Questa applicazione Java implementa un catalogo elettronico con la possibilità di inserire e visualizzare prodotti di diverse categorie. L'ereditarietà è utilizzata per modellare le relazioni tra i prodotti, facilitando l'aggiunta di nuove categorie in futuro.
+This Java application implements an electronic catalog with the ability to add and display products from different categories. Inheritance is used to model relationships between products, making it easier to add new categories in the future.
 
-Pacchetto org.java.lessons.inheritance
-Catalogo.java: La classe principale dell'applicazione che gestisce l'inserimento di prodotti nel catalogo.
-Pacchetto org.java.lessons.inheritance
-Prodotto.java: La classe base per tutti i prodotti. Genera automaticamente un codice casuale e fornisce informazioni di base come nome, marca, prezzo e IVA.
-Smartphone.java: Estende la classe Prodotto e aggiunge attributi specifici per gli smartphone, come IMEI e capacità di memoria.
-Televisore.java: Estende la classe Prodotto e aggiunge attributi specifici per i televisori, come dimensioni in pollici e indicazione se è una Smart TV.
-Cuffia.java: Estende la classe Prodotto e aggiunge attributi specifici per le cuffie, come colore e indicazione se sono wireless.
+Package org.java.lessons.inheritance
+Catalogo.java: The main class of the application responsible for handling product insertion into the catalog.
 
-Pacchetto org.java.lessons.inheritance
-Shop.java: La classe Shop fornisce esempi di creazione di prodotti di diverse categorie e ne mostra l'output.
+Package org.java.lessons.inheritance
+Prodotto.java: The base class for all products. Automatically generates a random code and provides basic information such as name, brand, price, and VAT.
+Smartphone.java: Extends the Prodotto class and adds specific attributes for smartphones, such as IMEI and memory capacity.
+Televisore.java: Extends the Prodotto class and adds specific attributes for televisions, such as size in inches and indication if it is a Smart TV.
+Cuffia.java: Extends the Prodotto class and adds specific attributes for headphones, such as color and indication if they are wireless.
 
-Funzionalità Principali
-Inserimento di prodotti nel catalogo, con scelta tra Smartphone, Televisore, Cuffie o uscita.
-Creazione automatica di un codice casuale per ogni prodotto.
-Visualizzazione dettagliata dei prodotti inseriti nel catalogo.
+Package org.java.lessons.inheritance
+Shop.java: The Shop class provides examples of creating products from different categories and displays their output.
+
+Main Features
+Insertion of products into the catalog, with choices between Smartphone, Television, Headphones, or exit.
+Automatic creation of a random code for each product.
+Detailed display of inserted products in the catalog
+
+.
 
 # java-nations-db-ex
 
-Questo programma Java si occupa di recuperare informazioni sulle nazioni da un database MySQL. Utilizza la connessione JDBC per interrogare il database e restituire i risultati in base a un parametro di ricerca inserito dall'utente.
+This Java program retrieves information about nations from a MySQL database. It uses JDBC connection to query the database and return results based on a search parameter entered by the user.
 
-Connessione al Database
-Viene stabilita una connessione al database MySQL locale utilizzando JDBC.
-Le credenziali di accesso al database (URL, nome utente e password) sono configurate come variabili.
+Database Connection
+Establishes a connection to the local MySQL database using JDBC.
+Access credentials to the database (URL, username, and password) are configured as variables.
 
-Query SQL
-Viene utilizzata una query SQL complessa per ottenere informazioni dettagliate sulle nazioni, compreso il nome della nazione, l'ID della nazione, il nome della regione e il nome del continente.
-La query include una clausola LIKE per filtrare i risultati in base a un parametro di ricerca inserito dall'utente.
-I risultati sono ordinati per nome della nazione.
+SQL Queries
+A complex SQL query is used to obtain detailed information about nations, including the nation's name, nation ID, region name, and continent name.
+The query includes a LIKE clause to filter results based on a search parameter entered by the user.
+Results are sorted by nation name.
 
-Input Utente
-Viene utilizzato uno scanner per acquisire il parametro di ricerca dall'utente.
-Elaborazione dei Risultati
-I risultati della query vengono elaborati utilizzando un oggetto ResultSet.
-Le informazioni estratte vengono stampate sulla console.
+User Input
+A scanner is used to acquire the search parameter from the user.
+Results Processing
+The query results are processed using a ResultSet object.
+Extracted information is printed to the console.
 
-Gestione Eccezioni
-La connessione al database e le operazioni di query sono incapsulate in un blocco try-with-resources per garantire la corretta chiusura delle risorse.
-In caso di eccezioni durante la connessione o l'esecuzione della query, viene visualizzato un messaggio di errore.
+Exception Handling
+Database connection and query operations are encapsulated in a try-with-resources block to ensure proper resource closure.
+In case of exceptions during connection or query execution, an error message is displayed.
 
 # java-oop-shop
 
-Applicazione di Banca
-L'applicazione Bank consente agli utenti di creare un conto bancario personale, effettuare operazioni come deposito e prelievo e visualizzare il saldo del conto. L'utente può interagire con l'applicazione inserendo le sue scelte tramite la console.
-Creazione del Conto: L'utente inserisce il proprio nome per creare un nuovo conto bancario.
-Operazioni Disponibili:
-Aggiungi Denaro: L'utente può inserire denaro nel conto specificando l'importo.
-Preleva Denaro: L'utente può prelevare denaro dal conto specificando l'importo.
-Uscita: L'utente può uscire dall'applicazione.
+Bank Application
+The Bank application allows users to create a personal bank account, perform operations like deposit and withdrawal, and view the account balance. The user can interact with the application by entering their choices via the console.
+Account Creation: The user enters their name to create a new bank account.
+Available Operations:
+Add Money: The user can input money into the account specifying the amount.
+Withdraw Money: The user can withdraw money from the account specifying the amount.
+Exit: The user can exit the application.
 
-Applicazione di Negozio di Prodotti
-L'applicazione Shop mostra un esempio di utilizzo di una classe Prodotto che rappresenta un articolo in un negozio. Ogni prodotto ha un ID, un nome, una descrizione, un prezzo, e un'aliquota IVA. L'applicazione crea un prodotto di esempio e lo visualizza sulla console.
-Creazione del Prodotto: Viene creato un prodotto di esempio utilizzando la classe Prodotto.
-Visualizzazione del Prodotto: Le informazioni del prodotto vengono visualizzate sulla console.
+Product Shop Application
+The Shop application demonstrates an example usage of a Product class representing an item in a shop. Each product has an ID, name, description, price, and VAT rate. The application creates an example product and displays it on the console.
+Product Creation: An example product is created using the Product class.
+Product Display: The product information is displayed on the console.
 
-Descrizione Generale
-Conto Bancario:
-Il conto bancario è rappresentato dalla classe Conto.
-Un nuovo conto viene creato con un ID casuale e un saldo iniziale di zero.
-L'utente può effettuare operazioni di deposito e prelievo sul conto.
-L'applicazione mostra il saldo del conto dopo ogni operazione.
-Negozio di Prodotti:
-I prodotti sono rappresentati dalla classe Prodotto.
-Ogni prodotto ha un ID casuale, un nome, una descrizione, un prezzo e un'IVA.
-Viene utilizzata una formattazione speciale per l'ID del prodotto.
-Le informazioni del prodotto, inclusi prezzo e IVA, vengono visualizzate sulla console.
+General Description
+Bank Account:
+The bank account is represented by the Account class.
+A new account is created with a random ID and an initial balance of zero.
+The user can perform deposit and withdrawal operations on the account.
+The application shows the account balance after each operation.
+Product Shop:
+Products are represented by the Product class.
+Each product has a random ID, name, description, price, and VAT.
+Special formatting is used for the product ID.
+Product information, including price and VAT, is displayed on the console.
 
 # java-snacks
 
-Questo repository contiene una serie di semplici programmi Java denominati "snack", ognuno progettato per affrontare un problema specifico o illustrare un concetto di programmazione.
+This repository contains a series of simple Java programs called "snacks," each designed to address a specific problem or illustrate a programming concept.
 
 JavaSnack1
-Chiede all'utente di inserire un numero.
-Restituisce il numero stesso se è pari, altrimenti restituisce il successivo numero dispari.
+Asks the user to enter a number.
+Returns the number itself if it is even, otherwise returns the next odd number.
 
 JavaSnack2
-Genera casualmente coppie di nomi e cognomi da elenchi prestabiliti.
-Stampa le coppie generate sulla console.
+Randomly generates pairs of names and surnames from predefined lists.
+Prints the generated pairs to the console.
 
 JavaSnack3
-Calcola la somma degli elementi in posizione dispari di un array di numeri interi predefinito.
+Calculates the sum of elements at odd positions in a predefined array of integers.
 
 JavaSnack4
-Chiede all'utente di inserire una stringa.
-Determina se la stringa è palindroma o meno.
+Asks the user to enter a string.
+Determines whether the string is a palindrome or not.
 
 JavaSnack5
-Chiede all'utente di inserire un numero.
-Genera un array di numeri casuali.
-Calcola e mostra diverse statistiche sull'array generato.
+Asks the user to enter a number.
+Generates an array of random numbers.
+Calculates and shows various statistics on the generated array.
 
 JavaSnack6
-Chiede all'utente di inserire un valore limite.
-Genera numeri casuali e li somma fino a superare il limite.
+Asks the user to enter a limit value.
+Generates random numbers and sums them until the limit is exceeded.
 
 JavaSnack7
-Genera casualmente un numero compreso tra 0 e 100 che sia sia divisibile per 3 che per 5.
+Randomly generates a number between 0 and 100 that is divisible by both 3 and 5.
 
 JavaSnack8
-Genera 10 numeri casuali.
-Suddivide i numeri generati in due array separati: uno per i numeri pari e uno per quelli dispari.
+Generates 10 random numbers.
+Divides the generated numbers into two separate arrays: one for even numbers and one for odd numbers.
 
 JavaSnack9
-Chiede all'utente di inserire altezza e base di un rettangolo.
-Calcola e mostra l'area e il perimetro del rettangolo.
+Asks the user to enter the height and base of a rectangle.
+Calculates and shows the area and perimeter of the rectangle.
 
 JavaSnack10
-Chiede all'utente di inserire il raggio di un cerchio.
-Calcola e mostra l'area e la circonferenza del cerchio.
+Asks the user to enter the radius of a circle.
+Calculates and shows the area and circumference of the circle.
 
 JavaSnack11
-Chiede all'utente di inserire un numero.
-Trova e mostra tutti i divisori del numero inserito.
+Asks the user to enter a number.
+Finds and shows all divisors of the entered number.
 
 JavaSnack12
-Combina due array di numeri interi in un nuovo array.
+Combines two arrays of integers into a new array.
 
 JavaSnack13
-Scambia il primo elemento di due array di numeri interi tra loro.
+Swaps the first element of two arrays of integers with each other.
 
-Ogni snack è progettato per essere eseguito indipendentemente e offre un piccolo esempio di implementazione pratica di un concetto specifico.
+Each snack is designed to be run independently and provides a small example of the practical implementation of a specific concept.
